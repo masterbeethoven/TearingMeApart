@@ -10,6 +10,8 @@ public class TimerScript : MonoBehaviour {
 	private int bestScore = 999999999; 
 	
 	void Start () {
+
+		Debug.Log("time");
 		DontDestroyOnLoad(this.gameObject);
 		
 		StreamReader reader = new StreamReader (FILE_NAME);
@@ -34,6 +36,8 @@ public class TimerScript : MonoBehaviour {
 		}
 	}
 	void EndGame(){
+		Debug.Log("time");
+
 		//end game here
 		//write the time to file
 		if(isRunning == true){

@@ -71,6 +71,14 @@ public class ASCIILoadScript : MonoBehaviour {
 					y * sphere.transform.localScale.y + offsetY,
 					0);
 			}
+
+		else if (c =='C'){
+			GameObject sphere = Instantiate(Resources.Load("DollHeads1")) as GameObject;
+			sphere.transform.position = new Vector3(
+				i * sphere.transform.localScale.x + offsetX,
+				y * sphere.transform.localScale.y + offsetY,
+				0);
+		}
 			
 		}
 		
