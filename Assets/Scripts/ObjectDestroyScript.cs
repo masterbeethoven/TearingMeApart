@@ -9,15 +9,16 @@ public class ObjectDestroyScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	/*void Update () {
-		Destroy (GameObject.FindWithTag("Foe"));
+
 	
-	}*/
-	
-	void OnTriggerEnter() {
-		Destroy (gameObject);
-		
-		
+
+	void OnCollisonEnter2D(Collision2D coll) 
+	{
+		if (coll.gameObject.tag == "Collider")
+		{
+			Destroy(gameObject);
+
+		}
 	}
 	
 }

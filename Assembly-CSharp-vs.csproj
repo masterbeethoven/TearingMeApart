@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{F0A12250-44DB-ABB4-5A30-33722D4EF118}</ProjectGuid>
+	<ProjectGuid>{8255D765-B33D-BD74-4F1C-9081720098DE}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\Bounce.cs" />
      <Compile Include="Assets\Scripts\ColorLerpScript.cs" />
      <Compile Include="Assets\Scripts\EndGame.cs" />
+     <Compile Include="Assets\Scripts\EnemyMoveScript.cs" />
+     <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\ObjectDestroyScript.cs" />
      <Compile Include="Assets\Scripts\OffScreenScript.cs" />
@@ -59,6 +61,7 @@
      <Compile Include="Assets\Scripts\SaveStatesScript.cs" />
      <Compile Include="Assets\Scripts\ScreenConstraints.cs" />
      <Compile Include="Assets\Scripts\ScrollingScript.cs" />
+     <Compile Include="Assets\Scripts\ShotScript.cs" />
      <Compile Include="Assets\Scripts\TagScript1.cs" />
      <Compile Include="Assets\Scripts\TagScript2.cs" />
      <Compile Include="Assets\Scripts\TeddyBounce.cs" />
