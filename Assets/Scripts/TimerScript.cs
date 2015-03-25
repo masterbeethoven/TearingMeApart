@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour {
 	public float time = 0;
@@ -17,9 +18,7 @@ public class TimerScript : MonoBehaviour {
 		StreamReader reader = new StreamReader (FILE_NAME);
 		
 		string content = reader.ReadLine();
-		
-		
-		
+
 		
 		
 		int bestScore = int.Parse(content);
@@ -32,7 +31,7 @@ public class TimerScript : MonoBehaviour {
 		if(isRunning == true){
 			time += Time.deltaTime;
 			int tmpTime = (int)Mathf.Floor(time);
-			this.gameObject.GetComponent<GUIText>().text = tmpTime.ToString();
+			this.gameObject.GetComponent<Text>().text = tmpTime.ToString();
 		}
 	}
 	void EndGame(){
