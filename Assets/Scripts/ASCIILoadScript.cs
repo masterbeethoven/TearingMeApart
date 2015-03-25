@@ -56,7 +56,7 @@ public class ASCIILoadScript : MonoBehaviour {
 			char c = rowArray[i];
 			
 			if(c == 'X'){
-				GameObject brick = Instantiate(Resources.Load("DollHeads1")) as GameObject;
+				GameObject brick = Instantiate(Resources.Load("Teddy2")) as GameObject; //really a teacup, could only trick unity via changing sprite and duplicating teddybear prefab
 				brick.transform.position = new Vector3(
 					i * brick.transform.localScale.x + offsetX,
 					//the .x is the X scale of the brick
@@ -64,13 +64,13 @@ public class ASCIILoadScript : MonoBehaviour {
 					0);
 			} 
 
-			/*else if (c =='S'){
-				GameObject sphere = Instantiate(Resources.Load("Sphere")) as GameObject;
+		else if (c =='S'){
+				GameObject sphere = Instantiate(Resources.Load("Teddy1")) as GameObject;
 				sphere.transform.position = new Vector3(
 					i * sphere.transform.localScale.x + offsetX,
 					y * sphere.transform.localScale.y + offsetY,
 					0);
-			}*/
+			}
 			
 		}
 		

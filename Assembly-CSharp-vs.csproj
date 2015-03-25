@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\TagScript1.cs" />
      <Compile Include="Assets\Scripts\TagScript2.cs" />
      <Compile Include="Assets\Scripts\TeddyBounce.cs" />
+     <Compile Include="Assets\Scripts\TimerScript.cs" />
      <Compile Include="Assets\Scripts\TriggerScript.cs" />
      <Compile Include="Assets\Scripts\VisibleSound.cs" />
  <Reference Include="UnityEngine.UI">
